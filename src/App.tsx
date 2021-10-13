@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import useVocab from './useVocab';
+
+const App: React.FunctionComponent = () => {
+  const [searchTerm, setSearchTerm] = React.useState<string>('');
+
+  const onSearchTermChanged: React.ChangeEventHandler<HTMLInputElement> =
+    ({ target: { value } }) => setSearchTerm(value);
+
+  const vocab = useVocab(searchTerm);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Computer Science Vocabulary</h1>
+
+      <form>
+        <label>Search Term</label>
+        <input type='text' value={searchTerm} onChange={onSearchTermChanged}></input>
+      </form>
+
+      <table id='definitions'>
+        <thead>
+          <tr>
+            <th className='lesson'>Lesson</th>
+            <th className='word'>Word</th>
+            <th className='definition'>Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          {vocab.map(({ lessons, word, definition }, i) => (<tr key={i}>
+            <td>{lessons.map(l => <div>{l}</div>)}</td>
+            <td>{word}</td>
+            <td>{definition}</td>
+          </tr>))}
+        </tbody>
+      </table>
     </div>
   );
 }
