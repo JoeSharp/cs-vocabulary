@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cs-vocabulary/static/css/main.d089d7cc.chunk.css",
+    "main.js": "/cs-vocabulary/static/js/main.51730972.chunk.js",
+    "main.js.map": "/cs-vocabulary/static/js/main.51730972.chunk.js.map",
+    "runtime-main.js": "/cs-vocabulary/static/js/runtime-main.66a5c131.js",
+    "runtime-main.js.map": "/cs-vocabulary/static/js/runtime-main.66a5c131.js.map",
+    "static/js/2.b12729c4.chunk.js": "/cs-vocabulary/static/js/2.b12729c4.chunk.js",
+    "static/js/2.b12729c4.chunk.js.map": "/cs-vocabulary/static/js/2.b12729c4.chunk.js.map",
+    "static/js/3.b5d99b92.chunk.js": "/cs-vocabulary/static/js/3.b5d99b92.chunk.js",
+    "static/js/3.b5d99b92.chunk.js.map": "/cs-vocabulary/static/js/3.b5d99b92.chunk.js.map",
+    "index.html": "/cs-vocabulary/index.html",
+    "static/css/main.d089d7cc.chunk.css.map": "/cs-vocabulary/static/css/main.d089d7cc.chunk.css.map",
+    "static/js/2.b12729c4.chunk.js.LICENSE.txt": "/cs-vocabulary/static/js/2.b12729c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66a5c131.js",
+    "static/js/2.b12729c4.chunk.js",
+    "static/css/main.d089d7cc.chunk.css",
+    "static/js/main.51730972.chunk.js"
+  ]
+}
